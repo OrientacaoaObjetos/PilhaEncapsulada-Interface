@@ -1,3 +1,4 @@
+import java.util.Arrays;
 
 public class Pilha {
 	
@@ -27,7 +28,7 @@ public class Pilha {
 	}
 
 	public Object[] getElementos() {
-		return elementos;
+		return Arrays.copyOf(elementos, tamanho());
 	}
 
 	public void setElementos(Object[] elementos) {
